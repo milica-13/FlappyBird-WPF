@@ -1,0 +1,30 @@
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build rezultati
+bin/
+obj/
+[Bb]uild/
+[Ll]og/
+artifacts/
+
+# NuGet
+packages/
+*.nupkg
+*.snupkg
+project.lock.json
+
+# Rider / VS Code
+.idea/
+.vscode/
+
+# Ostalo
+*.pdb
+*.cache
+*.db
+*.ds_store
+Thumbs.db

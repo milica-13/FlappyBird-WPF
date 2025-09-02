@@ -6,7 +6,7 @@ Igra ima **dnevni/noćni ciklus** (svakih **30 sekundi**), pamti **Top 3 rezulta
 
 ---
 
-## 🎮 Kako igrati
+## Kako igrati
 
 - **SPACE** – skok / poleti
 - **Enter / “Započni igru”** – start

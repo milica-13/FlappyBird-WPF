@@ -1,0 +1,43 @@
+﻿<Window x:Class="FlappyBird.BirdSelectionWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FlappyBird"
+        mc:Ignorable="d"
+        Title="Odabir ptice" Height="400" Width="600" WindowStartupLocation="CenterScreen">
+    <Grid Background="LightBlue">
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+            <TextBlock Text="Odaberi svoju pticu!" FontSize="24" FontWeight="Bold" 
+                       HorizontalAlignment="Center" Margin="0,10,0,20"/>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Border x:Name="Bird1Border" BorderThickness="2" BorderBrush="Transparent" Margin="10">
+                    <Image x:Name="Bird1" Source="pack://application:,,,/Resources/bird.png" Width="100"
+                           MouseLeftButtonDown="Bird_Click"/>
+                </Border>
+                <Border x:Name="Bird2Border" BorderThickness="2" BorderBrush="Transparent" Margin="10">
+                    <Image x:Name="Bird2" Source="pack://application:,,,/Resources/bird2.png" Width="100"
+                        MouseLeftButtonDown="Bird_Click"/>
+                </Border>
+                <Border x:Name="Bird3Border" BorderThickness="2" BorderBrush="Transparent" Margin="10">
+                    <Image x:Name="Bird3" Source="pack://application:,,,/Resources/bird3.png" Width="100"
+                           MouseLeftButtonDown="Bird_Click"/>
+                </Border>
+                <Border x:Name="Bird4Border" BorderThickness="2" BorderBrush="Transparent" Margin="10">
+                    <Image x:Name="Bird4" Source="pack://application:,,,/Resources/bird4.png" Width="100"
+                           MouseLeftButtonDown="Bird_Click"/>
+                    
+                </Border>
+
+            </StackPanel>
+
+            <Button Content="Potvrdi izbor"
+                    Width="150" Height="40"
+                    Margin="0,20,0,0"
+                    Click="ConfirmSelection_Click"
+                    HorizontalAlignment="Center"
+                    Background="DodgerBlue" Foreground="White" FontWeight="Bold"/>
+        </StackPanel>
+    </Grid>
+</Window>
